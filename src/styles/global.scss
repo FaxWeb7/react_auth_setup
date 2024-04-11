@@ -1,0 +1,47 @@
+@import './reset';
+@import './vars';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  @extend %font;
+  height: 100%;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  min-width: 320px;
+  &.locked {
+    overflow: hidden;
+  }
+  #root {
+    height: 100%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.header {
+  flex: 0 0 auto;
+}
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.container {
+  width: 100%;
+  max-width: $containerWidth + px;
+  margin: 0 auto;
+  padding: $containerYPadding + px $containerXPadding + px;
+  @media (max-width: 576px) {
+    padding: 20px 10px;
+  }
+}

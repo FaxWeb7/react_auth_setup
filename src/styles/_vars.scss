@@ -1,0 +1,16 @@
+$containerWidth: 1280;
+$containerYPadding: 20;
+$containerXPadding: 30;
+
+:root {
+  --background-color: white;
+  --primary-color: rgb(71, 71, 218);
+}
+
+%font {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
